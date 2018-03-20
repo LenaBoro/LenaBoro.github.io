@@ -82,6 +82,7 @@ h1 span{
   display: inline-block;
   transition: all 0.35s;
   font-size: 3em;
+  font-weight: 900;
   position: relative;
 }
 h1 span:after {
