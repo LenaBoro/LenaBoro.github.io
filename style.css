@@ -1,90 +1,150 @@
-body{
-    background: black;
-}
-a{
-    color: white;
-    text-decoration: none;
-}
-a:hover{
-    color:pink;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,body{
+  height: 100%;
 }
 
-.main{
-    width:960px;
-    margin:0 auto;
-    position: relative;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-#start{
-    background: white;
-    color: #47ad23;
-    border: none;
-    width:10%;
-    height:30px;
-    font-size: 20px;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-#start:hover{
-    background: #47ad23;
-    color: white;
+body {
+  box-sizing: border-box;
+	line-height: 1;
 }
-.game-over,.start-game,.win-game{
-    width: 98%;
-    height: 178%;
-    color: white;
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----------------------------------
+-------------------------------------
+reset---------------------------------*/
+  header{
+  margin-bottom: 2.5rem;
+  text-align: center;
+  }
+  video{
+    width: 100%;
+    opacity: .4;
     position: absolute;
+    top: 0;
+    padding-bottom: 5px;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+  }
+   h1{
+    perspective: 500px;
+    padding: 5vh 0;
+    line-height: 1.25;
+    position: relative;
     text-align: center;
-    font-size: 35px;
     z-index: 1;
-    top:0;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+}
+h1 span{
+  display: inline-block;
+  transition: all 0.35s;
+  font-size: 3em;
+  position: relative;
+}
+h1 span:after {
+    content: '';
+    display: block;
+    background: #dbff05;
+    height: 40%;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: -1;
+    -webkit-transform: rotate(2deg) skew(-5deg);
+    transform: rotate(2deg) skew(-5deg);
 }
 
-.clr{
-    clear: both;
+
+h1:hover span:first-child {
+  -webkit-transform: rotateY(15deg) rotateX(-20deg);
+          transform: rotateY(15deg) rotateX(-20deg);
 }
-.box{
-    width:100px;
-    height:100px;
-    float: left;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1;
-    border-radius: 1px;
+h1:hover span:last-child {
+  -webkit-transform: rotateY(-15deg) rotateX(20deg);
+          transform: rotateY(-15deg) rotateX(20deg);
 }
-.levels,.points,.clock,.goals{
-    float: left;
-    margin-left:30px;
-    font-size: 20px;
-    color: white;
+#about{
+  height: 2em;
+  display: block;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+
 }
-.points{
-    top: 50px;
+
+
+
+/*-----END---HEADER-----------------------*/
+
+.rezume{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 960px;
+    margin: 0 auto;
+    /*grid-gap: 30px;*/
 }
-.clock{
-    top: 100px
+article{
+  display: block;
+  position: relative;
 }
-.game{
-    width:300px;
-    height: 300px;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1;
-    top:200px;
-    left: 300px;
-    background:white;
+article img{
+  height: 230px;
+  width: 100%;
 }
-.game-circle{
-    width: 20px;
-    height: 20px;
-    background: orangered;
-    border-radius: 50%;
-    position: absolute;
-    left: 120px;
-    top: 28px;
-    z-index: 1;
-   }
-.game-over,.win-game{
-    height: 5%;
-    font-size: 75px;
+
+.list-social{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  max-width: 960px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 4rem auto 0;
 }
-.game-over,.game,.levels,.points,.clock, .win-game,.goals {
-    display: none;
+.a-social{
+  text-decoration: none;
+  font-family: 'Inconsolata', monospace;
+  display: block;
+  color: black;
+  transition: all .3s ease-in;
 }
