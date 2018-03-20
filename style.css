@@ -34,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   box-sizing: border-box;
 	line-height: 1;
+	transition: all .3s ease-in;
 }
 ol, ul {
 	list-style: none;
