@@ -43,8 +43,9 @@ function git(){
     event.target.style.color = 'white';
     event.target.style.fontSize = '1.5em';
     body.style.boxShadow = '0 -344px 611px -182px #5fb357 inset';
-    body.style.transition ='all 1s ease';
     body.style.background = '#FF0B05';
+    body.style.transition ='all 1s ease';
+    
   }
   github.onmouseout = function(event){
     event.target.style.fontSize = '';
@@ -52,8 +53,6 @@ function git(){
     body.style.background = '';
     body.style.boxShadow = 'none';
     body.style.transition ='all 1s ease';	  
-
-
   }
 };git();
 function teleg(){
@@ -61,14 +60,14 @@ function teleg(){
     event.target.style.color = 'white';
     event.target.style.fontSize = '1.5em';
     body.style.boxShadow = '0 -344px 611px -182px #FFF605 inset';
-    body.style.transition ='all 1s ease';
     body.style.background = '#5F07A6';
+    body.style.transition ='all 1s ease';	  
   }
   telegramm.onmouseout = function(event){
     event.target.style.fontSize = '';
     event.target.style.color = '';
-    body.style.transition ='all 1s ease';
     body.style.background = '';
     body.style.boxShadow = 'none';
+    body.style.transition ='all 1s ease';	  
   }
 };teleg();
