@@ -17,7 +17,7 @@ writeTextByJS(id,text,speed)
 
   var facebook = document.querySelector('.facebook');
   var github = document.querySelector('.github');
-  var telegramm = document.querySelector('.telegramm');
+  var telegramm = document.querySelector('.telegram');
   var body = document.querySelector('body');
 
 function face(){
