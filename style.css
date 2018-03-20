@@ -1,0 +1,90 @@
+body{
+    background: black;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color:pink;
+}
+
+.main{
+    width:960px;
+    margin:0 auto;
+    position: relative;
+}
+#start{
+    background: white;
+    color: #47ad23;
+    border: none;
+    width:10%;
+    height:30px;
+    font-size: 20px;
+}
+#start:hover{
+    background: #47ad23;
+    color: white;
+}
+.game-over,.start-game,.win-game{
+    width: 98%;
+    height: 178%;
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+    z-index: 1;
+    top:0;
+}
+
+.clr{
+    clear: both;
+}
+.box{
+    width:100px;
+    height:100px;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    border-radius: 1px;
+}
+.levels,.points,.clock,.goals{
+    float: left;
+    margin-left:30px;
+    font-size: 20px;
+    color: white;
+}
+.points{
+    top: 50px;
+}
+.clock{
+    top: 100px
+}
+.game{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top:200px;
+    left: 300px;
+    background:white;
+}
+.game-circle{
+    width: 20px;
+    height: 20px;
+    background: orangered;
+    border-radius: 50%;
+    position: absolute;
+    left: 120px;
+    top: 28px;
+    z-index: 1;
+   }
+.game-over,.win-game{
+    height: 5%;
+    font-size: 75px;
+}
+.game-over,.game,.levels,.points,.clock, .win-game,.goals {
+    display: none;
+}

@@ -1,2 +1,0 @@
-# LenaBoro.github.io
-hosting
