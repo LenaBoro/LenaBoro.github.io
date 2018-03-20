@@ -34,6 +34,7 @@ function face(){
     body.style.transition ='all 1s ease'
     body.style.background = '';
     body.style.boxShadow = 'none'
+    body.style.transition ='all 1s ease'	  
 
   }
 }; face();
@@ -41,14 +42,16 @@ function git(){
   github.onmouseover = function(event){
     event.target.style.color = 'white';
     event.target.style.fontSize = '1.5em';
-    body.style.boxShadow = '0 -344px 611px -182px #5fb357 inset'
-    body.style.background = '#FF0B05'
+    body.style.boxShadow = '0 -344px 611px -182px #5fb357 inset';
+    body.style.transition ='all 1s ease';
+    body.style.background = '#FF0B05';
   }
   github.onmouseout = function(event){
     event.target.style.fontSize = '';
     event.target.style.color = '';
     body.style.background = '';
     body.style.boxShadow = 'none';
+    body.style.transition ='all 1s ease';	  
 
 
   }
@@ -57,12 +60,14 @@ function teleg(){
   telegramm.onmouseover = function(event){
     event.target.style.color = 'white';
     event.target.style.fontSize = '1.5em';
-    body.style.boxShadow = '0 -344px 611px -182px #FFF605 inset'
+    body.style.boxShadow = '0 -344px 611px -182px #FFF605 inset';
+    body.style.transition ='all 1s ease';
     body.style.background = '#5F07A6';
   }
   telegramm.onmouseout = function(event){
     event.target.style.fontSize = '';
     event.target.style.color = '';
+    body.style.transition ='all 1s ease';
     body.style.background = '';
     body.style.boxShadow = 'none';
   }
