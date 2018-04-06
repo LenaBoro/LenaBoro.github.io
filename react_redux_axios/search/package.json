@@ -1,7 +1,8 @@
 {
-  "name": "search",
+  "name": "se",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/LenaBoro/react",
   "dependencies": {
     "axios": "^0.18.0",
     "history": "^4.7.2",
@@ -19,6 +20,8 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
+    "deploy": "gh-pages -d build && npm run build",
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
