@@ -121,17 +121,17 @@ h1:hover span:last-child {
 
 .rezume{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     max-width: 960px;
     margin: 0 auto;
-    /*grid-gap: 30px;*/
+    grid-gap: 10px;
 }
 article{
   display: block;
   position: relative;
 }
 article img{
-  height: 230px;
+  height: 180px;
   width: 100%;
 }
 
