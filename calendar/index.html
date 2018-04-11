@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+	<link rel="icon" href="./src/images/calendar.png">
+    <link rel='stylesheet' href='dist/style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="wrapper">
+            <section class="wrapper-grid">
+                <section class="header-box">
+                    <button class="header-button" id="button-js">Добавить</button>
+                    <button class="header-button" onClick = "window.location.reload()">Обновить</button>
+                </section>
+                <section class="header-box">
+                    <button id="search-button"><img src="./src/images/search.png" alt="search button"></button>
+                    <input type="text" placeholder = "Событие, дата или участник" class="search-bar">
+                </section>
+            </section>
+        </section>
+    </header>
+    <section class="wrapper">
+        <button id="back" class="arrow-button"><img src="./src/images/back.png" alt="arrow back"></button>
+        <span id="month"></span>
+        <button id="up" class="arrow-button"><img src="./src/images/next.png" alt="arrow next"></button>
+        <button class="button-today">Сегодня</button>
+    </section>
+     <section id="calendar" class="wrapper"></section>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>

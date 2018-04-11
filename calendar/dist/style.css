@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none; }
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: #777777; }
+
+header {
+  width: 100%;
+  height: auto;
+  background: #f4f4f4;
+  box-shadow: 0 0 4px 2px #dad8d8;
+  padding-bottom: 1%;
+  margin-bottom: 1em; }
+
+.header-button {
+  background-color: #006fca;
+  border: 1px solid #3d8fd1;
+  color: #fff;
+  padding: .5% 2%;
+  margin-right: 1%;
+  font-size: 2vh; }
+
+.header-box {
+  padding: 4em 0 0 0; }
+
+.search-bar {
+  width: 85%;
+  padding: 2% .5%;
+  font-size: 1.7vh;
+  border: 1px solid #cecece;
+  border-top-style: inset 1px solid #cecece;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px #9f9f9f;
+  -moz-box-shadow: inset 0 1px 1px #9f9f9f;
+  box-shadow: inset 0 1px 1px #9f9f9f; }
+
+#search-button {
+  width: 6%;
+  vertical-align: middle; }
+  #search-button img {
+    width: 95%; }
+
+.wrapper {
+  margin: auto;
+  width: 80%;
+  margin-bottom: 1em; }
+
+.wrapper-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+  grid-template-columns: 3fr 1fr; }
+
+.button-today {
+  background-color: white;
+  border: 1px solid #9f9f9f;
+  vertical-align: text-top;
+  width: 5em;
+  height: 1.4em;
+  border-radius: 10%; }
+
+.table-calendar {
+  border-collapse: collapse; }
+
+td {
+  font-size: 0.95em;
+  vertical-align: top;
+  width: 12.9em;
+  height: 10em;
+  border: 1px solid #bdbdbd;
+  padding: 1%; }
+
+.today {
+  background: #eeeeee; }
+
+.events {
+  background: #78cef2; }
+
+.description {
+  display: block; }
+
+.past-month,
+.future-month {
+  color: #bebebe; }
+
+.arrow-button {
+  width: 1.2em;
+  height: 1.4em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fcfcfc;
+  border: 1px solid #9f9f9f;
+  border-radius: 20%;
+  outline: none;
+  vertical-align: text-top; }
+  .arrow-button:active {
+    background-color: #eeeeee; }
+  .arrow-button img {
+    width: 55%; }
+
+#month {
+  font-size: 1.5em;
+  display: inline-block;
+  width: 16%;
+  color: #777777;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map*/
