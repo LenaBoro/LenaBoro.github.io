@@ -20,7 +20,23 @@ $text: #bebebe;
 $events: #78cef2;
 $today: #eeeeee;
 
+//mixin
+@mixin border-header{
+  box-shadow: 0 0 4px 2px $header-shadow;
+  -webkit-box-shadow: 0 0 4px 2px $header-shadow;
+  -moz-box-shadow: 0 0 4px 2px $header-shadow;
+}
+@mixin border-radius{
+  border-radius: 3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
 
+@mixin border-shadow{
+  -webkit-box-shadow: inset 0 1px 1px $border-gray;
+  -moz-box-shadow: inset 0 1px 1px $border-gray;
+  box-shadow: inset 0 1px 1px $border-gray;
+}
 //reset
 *{
   padding: 0;
@@ -43,7 +59,7 @@ header{
   width:100%;
   height: auto;
   background: $header-color;
-  box-shadow: 0 0 4px 2px $header-shadow;
+  @include border-header;
   padding-bottom: 1%;
   margin-bottom: 1em;
 }
@@ -76,13 +92,9 @@ header{
   font-size: 1.7vh;
   border: 1px  solid $text-calendar;
   border-top-style: inset 1px solid  $text-calendar;
-  border-radius: 3px;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  -webkit-box-shadow: inset 0 1px 1px $border-gray;
-  -moz-box-shadow: inset 0 1px 1px $border-gray;
-  box-shadow: inset 0 1px 1px $border-gray;
-}
+  @include border-radius;
+  @include border-shadow;
+ }
 #search-button{
   width: 6%;
   vertical-align: middle;
@@ -92,9 +104,8 @@ header{
 }
 //calendar section
 .wrapper{
-  margin: auto;
-  width: 80%;
-  margin-bottom: 1em;
+  margin: 0 auto 1em;
+  width: 80%;;
 }
 
 .wrapper-grid{
@@ -102,8 +113,6 @@ header{
   display: grid;
   -ms-grid-columns: 3fr 1fr;
   grid-template-columns: 3fr 1fr;
-
-
 }
 .button-today{
   background-color: white;
@@ -111,9 +120,7 @@ header{
   vertical-align: text-top;
   width: 5em;
   height: 1.4em;
-  border-radius: 3px;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
+  @include border-radius;
 }
 //table
 .table-calendar{
@@ -152,9 +159,7 @@ td{
   background-size: contain;
   background: #fcfcfc no-repeat;
   border: 1px solid $border-gray;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  @include border-radius;
   outline: none;
   vertical-align: text-top;
   &:active{
