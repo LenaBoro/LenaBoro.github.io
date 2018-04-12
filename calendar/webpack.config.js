@@ -22,19 +22,8 @@ module.exports = {
                     fallback: 'style-loader',
                     use: ['css-loader', 'sass-loader']
                 })
-            },
-            {
-                test: /\.(gif|jpe?g|png|svg)$/i,
-                use: [
-                    'file-loader',
-                    {
-                        loader: 'image-webpack-loader',
-                        options: {
-                            bypassOnDebug: true
-                        },
-                    },
-                ],
-            }]
+            }
+        ]
     },
     plugins: [
         new ExtractTextPlugin('style.css')
