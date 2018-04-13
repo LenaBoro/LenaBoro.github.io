@@ -85,12 +85,11 @@ header {
 .table-calendar {
   border-collapse: collapse;
   table-layout: fixed;
-  width: 2%; }
+  width: 100%; }
 
 td {
   font-size: 0.95em;
   vertical-align: top;
-  width: 12.5em;
   height: 10em;
   border: 1px solid #bdbdbd;
   padding: 1%;
@@ -137,3 +136,5 @@ td {
 
 .show {
   visibility: inherit; }
+
+/*# sourceMappingURL=style.css.map*/

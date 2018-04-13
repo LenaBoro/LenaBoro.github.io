@@ -105,7 +105,7 @@ header{
 //calendar section
 .wrapper{
   margin: 0 auto 1em;
-  width: 80%;;
+  width: 80%;
 }
 
 .wrapper-grid{
@@ -126,13 +126,12 @@ header{
 .table-calendar{
   border-collapse: collapse;
   table-layout: fixed;
-  width: 2%;
+  width: 100%;
 }
 
 td{
   font-size: $td-size;
   vertical-align: top;
-  width: 12.5em;
   height: 10em;
   border: 1px solid $border-light-gray;
   padding: 1%;
