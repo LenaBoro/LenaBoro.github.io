@@ -1,0 +1,101 @@
+body{
+    background: #fdffeb;
+}
+h1 {
+    text-align: center;
+    font-family: 'Cabin Sketch', cursive;
+    color: #3F51B5;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+img {
+    width: 400px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.cat {
+    text-align: center;
+    height: 100%;
+    width: 50%;
+}
+
+.name, .count {
+    color: #377eed;
+    margin: 0;
+    font-family: 'Itim', cursive;
+    font-size: 15px;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 15px;
+    color: #377eed;
+    margin: 10px;
+    font-family: 'Itim', cursive;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 70% 60% 90% 50%;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.form-cat {
+    display: none;
+}
+
+form {
+    width: 180px;
+    margin: 40px 20px;
+}
+
+.container__flex {
+    display: flex;
+}
+
+button {
+    height: 40px;
+    width: 85px;
+    margin: 10px 0;
+    outline: none;
+    background: white;
+    font-family: 'Itim', cursive;
+    color: deeppink;
+    cursor: pointer;
+
+}
+
+.admin {
+    margin: 50px 10px 10px;
+}
+
+label {
+    display: block;
+    font-family: 'Itim', cursive;
+    color: deeppink;
+    margin: 10px 0;
+
+}
+
+input {
+    border: 1px solid #aeaeae;
+    outline: none;
+    height: 25px;
+
+}
+
+.like {
+    font-size: 27px;
+    color: red;
+    margin-left: 10px;
+}

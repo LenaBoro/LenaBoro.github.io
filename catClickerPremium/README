@@ -1,0 +1,26 @@
+  Cat Clicker Premium
+
+What is it?
+-----------
+
+This is simple application written by native javascript.
+In this project, i studied the use of MVC and didn't think about styles. In index.js:
+M(modal) - data
+V(view) - view
+C(controller) - octopus.
+
+
+What does this application do?
+-------------------------
+When you open index.html you will see a list of cat names and the "Admin" button.
+When you select the name of the cat and click you will see the cat's image, the cat's name and likes cat.
+if you want to increase likes just click on the image.
+
+When you press the "Admin" button, you can correct the data of the cats(name, url ,and likes) and save them.
+
+
+How get to started?
+----------------
+1) Download zip-file or git clone.
+2) Open index.html.
+3) Use application:)
