@@ -3,7 +3,7 @@ var text = ['Hi! I develop web applications HTML, CSS, JAVASCRIPT, NODE JS.'];
 var id = document.getElementById('about');
 var speed = 80;
 function writeTextByJS(id, text, speed){
-	    txt = text.join("").split("");
+	    var txt = text.join("").split("");
     	var interval = setInterval(function(){
     		if(!txt[0]){
     			return clearInterval(interval);

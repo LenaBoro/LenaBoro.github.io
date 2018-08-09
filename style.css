@@ -130,10 +130,11 @@ article{
   display: block;
   position: relative;
 }
-article img{
 
+article img{
   height: auto;
   width: 100%;
+  filter:
 }
 
 .list-social{
