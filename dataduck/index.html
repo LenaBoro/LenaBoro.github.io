@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>dataduck</title>
+	<meta name="keywords" content="keywords" />
+	<meta name="description" content="description" />
+	<!--favicon-->
+	<link type="image/x-icon" rel="icon" href="favicons/favicon-32x32.png" />
+	<!--viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+	<!--meta(name="viewport" content="width=device-width, initial-scale=1.0")-->
+	<!--styles-->
+	<link rel="stylesheet" type="text/css" href="css/app.min.css?v=1.0" />
+</head>
+
+<body class="home">
+	<!--header-->
+	<header class="header">
+		<div class="container">
+			<div class="container__flex">
+				<div class="logo"></div>
+				<button class="btn btn--enter">войти
+					<!--span войти-->
+				</button>
+			</div>
+		</div>
+	</header>
+	<!--main-->
+	<main class="wrapper">
+		<section class="trade">
+			<div class="container">
+				<div class="trade__left">
+					<h2 class="h2">Начните торговать прямо сейчас</h2>
+					<ul class="conditions">
+						<li><span>Нет спреда — торгуйте с прозрачными и точными котировками</span>
+						</li>
+						<li><span>Достаточно депозита в $10, чтобы начать торговать</span>
+						</li>
+					</ul>
+					<form class="form-registration" action="" method="post" autocomplete="on" id="form-registration">
+						<label class="form__label">
+							<input type="email" id="form__input-email" />
+							<p class="label-text">Your e-mail</p>
+						</label>
+						<label class="form__label">
+							<div class="block-help">
+								<p>Неверный пароль</p>
+							</div>
+							<input type="password" min="4" id="form__input-pass" />
+							<p class="label-text">Придумайте пароль</p>
+						</label>
+						<div class="form-registration__tabs">
+							<p class="tabs__text">Валюты для ввода и вывода средств</p>
+							<ul class="tabs__item">
+								<li class="item-valuta item--active" data-currency="p"><span>P</span>
+								</li>
+								<li class="item-valuta" data-currency="s"><span>S</span>
+								</li>
+								<li class="item-valuta" data-currency="e"><span>E</span>
+								</li>
+							</ul>
+						</div>
+						<label class="form__label-checkbox">
+							<input class="checkbox__input" type="checkbox" /><span class="checkmark"></span><span class="checkbox__text">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</span>
+						</label>
+						<div class="block--error">
+							<p>Учётная запись с указанным e-mail уже существует</p>
+						</div>
+						<button class="btn btn--green" id="btn-submit">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!--footer-->
+		<footer class="footer">
+			<div class="container"></div>
+		</footer>
+		<!--modal-->
+		<!--modal join start-->
+		<!--jquery-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</main>
+</body>
+
+</html>
